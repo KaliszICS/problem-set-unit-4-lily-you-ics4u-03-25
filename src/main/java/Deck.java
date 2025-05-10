@@ -1,8 +1,9 @@
 /**
  * This Deck class allows users to create a deck of playing cards.
- * It provides methods to access the size of the deck, manipulate the deck by drawing cards, shuffling and reshuffling the deck.
+ * This class provides methods to access the size of the deck, manipulate the deck by drawing cards, shuffling and reshuffling the deck.
+ * 
  * @author Lily You
- * @version 1.4
+ * @version 1.5
  */
 
 import java.util.Arrays;
@@ -13,8 +14,8 @@ public class Deck{
     private ArrayList<Card> deck;
 
     /**
-     * Constructs a new Deck object with the variable cards
-     * @param cards Card array - represents the deck of cards
+     * Constructs a new Deck object with the variable cards.
+     * @param cards Card array - represents the deck of cards.
      */
     public Deck(Card[] cards){
         if(cards == null){
@@ -26,7 +27,7 @@ public class Deck{
     }
     
     /**
-     * Constructs a new Deck object that generates an unshuffled deck of cards
+     * Constructs a new Deck object that generates an unshuffled deck of cards.
      */
     public Deck(){
         this.deck = new ArrayList<>();
@@ -42,8 +43,8 @@ public class Deck{
 
 
     /**
-     * This method returns the amount of cards in the deck
-     * @return the amount of cards in the deck
+     * This method returns the amount of cards in the deck.
+     * @return the amount of cards in the deck.
      */
     public int size(){
         if(this.deck == null){
@@ -53,8 +54,8 @@ public class Deck{
     }
 
     /**
-     * This method removes the top card from the deck and returns it
-     * @return the top card of the deck
+     * This method removes the top card from the deck and returns it.
+     * @return the top card of the deck.
      */
     public Card draw(){
         if(this.deck == null || this.deck.isEmpty()){
@@ -67,7 +68,7 @@ public class Deck{
     I used it to help me with how to loop through without repeats or losing elements
     Use random(https://www.geeksforgeeks.org/generating-random-numbers-in-java/) and swap elements in the array to shuffle it */ 
     /**
-     * This method shuffles the cards in the deck by swapping elements
+     * This method shuffles the cards in the deck by swapping elements.
      */
     public void shuffle(){
         if(this.deck != null){
@@ -82,8 +83,8 @@ public class Deck{
     }
 
     /**
-     * This method adds the provided Card object into the deck
-     * @param card the Card object to be added to the deck
+     * This method adds the provided Card object into the deck.
+     * @param card the Card object to be added to the deck.
      */
     public void addCard(Card card){
         if(card != null){
@@ -92,7 +93,7 @@ public class Deck{
     }
     
     /**
-     * This mehod adds an array of cards into the deck and shuffles it
+     * This mehod adds an array of cards into the deck and shuffles it.
      * @param cards Card array that contains the cards that are to be added
      */
     public void reshuffle(Card[] cards){
